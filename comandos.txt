@@ -1,0 +1,21 @@
+Yarn 
+
+	cinst yarn (admin) (instalaçao)
+
+	yarn --version (admin)
+Expo
+
+	yarn global add expo-cli  (instalaçao)
+	
+	expo --version
+
+Usando o Yarn 
+	
+	yarn create react-app web --template typescript (criando projeto)
+	
+	yarn start (iniciando)
+React-Router-Dom (navegaçäo)
+
+	yarn add react-router-dom (instalaçao)
+
+	yarn add @types/react-router-dom -D (tipando para typescript)
