@@ -53,6 +53,8 @@
     transition: backgrounf-color 0.2s;
 }
 
+/* Layout Mobile  */
+
 .buttons-container a:first-child{
     margin-right: 1.6rem;
 }
@@ -92,6 +94,8 @@
 .total-connections img{
     margin-left: 0.8rem;
 }
+
+/* Layout Web  */
 
 @media (min-width: 1100px){ /*responsivo ao tamanho da guia*/
     #page-landing-content {

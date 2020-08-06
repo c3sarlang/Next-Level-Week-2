@@ -5,35 +5,63 @@ import React from 'react';
 import whatsappIcon from "../../assets/images/icons/whatsapp.svg"
 
 import "./styles.css"
+import { create } from 'domain';
+import api from '../../services/api';
 
-function TeacherItem(){
+export interface Teacher { //exportando para ser usada a mesma tipagem
+    
+        id: number;
+        avatar: string;
+        bio: string;
+        cost: number;
+        name: string;
+        subject: string;
+        whatsapp: string;
+
+   
+}
+
+interface TeacherItemProps { // passando as mesmas propriedades de Teacher.
+   teacher: Teacher;
+
+
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({teacher})=> {
+
+    function createNewConnection(){ //criando conexao ao entrar em contato
+        api.post("connections", { //acessando a rota de conexoes
+            user_id: teacher.id //enviando o id do professor
+        })
+    }
+
+
     return (
 
         <article className="teacher-item">
                    <header>
-                       <img src="https://avatars3.githubusercontent.com/u/55794477?s=460&u=8cdba3bcef3f51add6c8602e86036869cbbffcaa&v=4" alt="Júlio César"/>
+                       <img src={teacher.avatar} alt={teacher.name}/>
                         <div>
-                            <strong>Júlio César</strong>
-                            <span>Matématica</span>
+                            <strong>{teacher.name}</strong>
+                            <span>{teacher.subject}</span>
                         </div>
                    </header>
 
-                   <p>
-                       Astronomo e Cientista da Lógica da Programaçäo
-                        <br/> <br/>
-                       Apaixonado pelo espaço e pela lógica nilista, seguidor da razäo Arístotelica e nietcheana.
-
-                   </p>
+                   <p>{teacher.bio}</p>
 
                    <footer>
                        <p>
-                           Preço/Hora 
-                           <strong>R$: 100.00</strong>
+                            Preço/Hora 
+                            <strong>{teacher.cost}</strong>
                        </p>
-                       <button type="button">
-                            <img src={whatsappIcon} alt="Whatsapp"/>
-                            Entrar em contato
-                       </button>
+                       <a 
+                        target="blank" //abrindo guia em nova página
+                        onClick={createNewConnection} //chamando uma conexao ao entrar em contato
+                        href={`https://wa.me/${teacher.whatsapp}`}
+                        > {/*passando uma variavel dentro de um link */}
+                                    <img src={whatsappIcon} alt="Whatsapp"/>
+                                    Entrar em contato
+                       </a>
                    </footer>
 
 

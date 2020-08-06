@@ -67,4 +67,8 @@ Cors (permite que aplicacoes em enderecos diferentes possam acessar api)
 
 	yarn add @types/cors -D (tipando para typescript)
 
+Axios (ajuda a consumir apis externas)
+
+	>yarn add axios (instalacao)
+
 

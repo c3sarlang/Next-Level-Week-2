@@ -58,7 +58,7 @@
     display: block;
 }
 
-.teacher-item footer button {
+.teacher-item footer a {
     width: 20rem;
     height: 5.6rem;
     background: var(--color-secundary);
@@ -71,11 +71,14 @@
     align-items: center;
     justify-content: space-evenly;
     transition: 0.2s; /*transiçao de cor ao encostar no elemento*/
+    text-decoration: none;
 
 }
-.teacher-item footer button:hover{ 
+.teacher-item footer a:hover{ 
     background: var(--color-secundary-dark); /*transiçao de cor*/
 }
+
+/* Layout Mobile  */
 
 @media (min-width: 515px) {
     .teacher-item header,

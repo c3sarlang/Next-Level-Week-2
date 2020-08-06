@@ -11,6 +11,7 @@ import "./styles.css"
 
 interface PageHeaderProps{ //passando uma propriedade como obrigatória.
     title: string;
+    description?: string; //nao é obrigatorio
 }
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => { //componente em formato de funçao. // passando propriedade.
@@ -26,6 +27,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => { //componente em forma
 
         <div className="header-content">
             <strong>{props.title}</strong>
+             {props.description && <p>{props.description}</p>}  {/*se nao for nulo vai ser exibido*/}
 
             {props.children}  {/*passando conteudo dentro do componente*/}
         </div>
