@@ -19,3 +19,52 @@ React-Router-Dom (navegaçäo)
 	yarn add react-router-dom (instalaçao)
 
 	yarn add @types/react-router-dom -D (tipando para typescript)
+
+Server 
+
+	yarn init -y (modulo package json)
+	yarn add typescript -D  (tipando para typescript)
+	yarn tsc --init (typescript config - congig para node target: "es2017")
+	yarn add ts-node-dev -D (fazer o node entender typescript e automatizando atualizaçoes)
+
+	package.json
+
+	"start": "tsnd src/server.ts" (yarn start - inicializa o server)
+	"start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts" (transformando de typescript para javascript e ignorando os node_modules e atualiza o código)
+Express
+
+	yarn add express(instalaçao - ajuda a startar a aplicaçao)
+	yarn add @types/express -D (tipando para typescript)
+
+Knex + Sqlite3 (permite escrever sql com javascript)
+
+		yarn add knex sqlite3 ( instalaçao)
+
+		yarn install (instalando dependencias para o server)     
+		{
+			
+		"devDependencies": {
+		"@types/express": "^4.17.7",
+		"ts-node-dev": "^1.0.0-pre.56",
+		"typescript": "^3.9.7"
+		
+	},
+
+	"dependencies": {
+		"express": "^4.17.1",
+		"knex": "^0.21.2",
+		"sqlite3": "^5.0.0"
+	}
+	
+		}
+
+		"knex:migrate" (executar as ultimas migrations para criaçao das tabelas e campos)
+		"knex:migrate:rollback" (volta para uma versao anterior)
+
+Cors (permite que aplicacoes em enderecos diferentes possam acessar api)
+
+	yarn add cors (instalacao)
+
+	yarn add @types/cors -D (tipando para typescript)
+
+
