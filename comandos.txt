@@ -71,4 +71,27 @@ Axios (ajuda a consumir apis externas)
 
 	>yarn add axios (instalacao)
 
+Expo (executando e criando projetos mobile)
+
+	yarn global add expo-cli (instalacao)
+
+	expo --version (verificando versao)
+
+	expo init mobile (criando aplicaçao) Blank typescript
+
+	yarn start (inicializando)
+
+	expo install @expo-google-fonts/archivo @expo-google-fonts/poppins (instalando fonts do google fonts)
+
+React Navigation (navegacao no app)
+
+	yarn add @react-navigation/native (instalacao)
+
+	expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view (dependencias para o expo instalacao)
+
+	yarn add @react-navigation/stack (navegacao em pilha instalacao)
+
+	yarn add @react-navigation/bottom-tabs (navegacao em abas instalacao)
+
+
 

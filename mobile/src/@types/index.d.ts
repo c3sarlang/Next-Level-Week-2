@@ -1,0 +1,1 @@
+declare module "*.png" //define que todo arquivo .png ponto ser importado pela aplicacao.
