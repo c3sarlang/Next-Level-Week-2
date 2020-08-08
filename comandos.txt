@@ -93,5 +93,9 @@ React Navigation (navegacao no app)
 
 	yarn add @react-navigation/bottom-tabs (navegacao em abas instalacao)
 
+AsyncStorage (armazenando váriaveis dentro do app)
+
+	 expo install @react-native-community/async-storage (isntalacao expo)
+
 
 

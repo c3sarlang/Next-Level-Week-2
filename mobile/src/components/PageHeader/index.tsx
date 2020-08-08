@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { View,Image, Text } from "react-native";
 import {BorderlessButton} from "react-native-gesture-handler"
 
@@ -11,11 +11,13 @@ import styles from "./styles"
 import { useNavigation } from "@react-navigation/native";
 
 interface PageHeaderProps{ //passando propriedades  decampos obrigátorios.
-    title: string; 
+    title: string;
+    headerRight?: ReactNode; //passando um componente como propriedade nao obrigatoria.
+
 
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({title}) => { //passando campo obrigatorio.
+const PageHeader: React.FC<PageHeaderProps> = ({title,children, headerRight}) => { //passando campo obrigatorio.
 
     const {navigate} = useNavigation();
 
@@ -34,7 +36,14 @@ const PageHeader: React.FC<PageHeaderProps> = ({title}) => { //passando campo ob
                 <Image source={logoImg} resizeMode="contain"/>
             </View>
 
-    <Text style={styles.title}>{title}</Text>
+        <View style={styles.header}>
+            <Text style={styles.title}>{title}</Text>
+            {headerRight}
+        </View>
+       
+
+        {children}{/*possiblitando colocar outros elementos */}
+
         </View>
     )
 }

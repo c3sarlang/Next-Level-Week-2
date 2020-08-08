@@ -1,4 +1,4 @@
-import React from "react"
+import React,{useState,useEffect} from "react"
 import {View, Image, Text, TouchableOpacity} from "react-native"
 import {useNavigation} from "@react-navigation/native"
 
@@ -10,8 +10,20 @@ import ladingImg from "../../assets/images/landing.png"
 import studyIcon from "../../assets/images/icons/study.png"
 import giveClassesIcon from "../../assets/images/icons/give-classes.png"
 import HeartIcon from "../../assets/images/icons/heart.png"
+import api from "../../services/api";
 
 function Landing (){
+
+    const [totalConnections, setTotalConnections ] = useState(0) //inciando valor como 0.
+
+    
+    useEffect(() => {
+        api.get ("/connections").then(response =>{ //quando tiver uma resposta
+            // console.log(response)
+            const {total} = response.data; //settando os dados para objeto total.
+                setTotalConnections(total); //settando na funçao.
+        })
+    },[]) //executar quando é exibido em tela
 
     const {navigate} = useNavigation() //usando navegacao
 
@@ -56,7 +68,7 @@ function Landing (){
 
 
             <Text style={styles.totalConnections}>
-                Total de 285  já realizadas {" "}
+                Total de {totalConnections}{`\n`}já realizadas{"  "}
                 <Image source={HeartIcon}/>
             </Text>
             
