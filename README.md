@@ -6,7 +6,7 @@ As Professores poderão se cadastrar na plataforma web enviando:
 - Whatsapp.
 - Biografia
 - Máteria da aula.
-- Custo da sua hora aula.
+- Custo da sua hora/aula.
 - Horários disponivéis na semana.
 
 Os Estudantes vão ter acesso a buscar por:
