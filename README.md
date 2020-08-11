@@ -12,8 +12,8 @@ As Professores poderão se cadastrar na plataforma web enviando:
 Os Estudantes vão ter acesso a buscar por:
 - Matéria da aula do professor.
 - Dia da semana.
-- Horários disponivéis na semana.
--
+- Horários disponivéis.
+
 
 Linguagens utilizadas:
 - Expo
