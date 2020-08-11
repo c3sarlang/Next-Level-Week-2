@@ -24,4 +24,4 @@ Linguagens utilizadas:
 Desenvolvedor: Júlio César de Oliveira Guimarães
 
 #rocketseat #Next-Level-Week-2
-#nodejs #typescript #expo #axios
+#nodejs #typescript #expo #axios #react.js
