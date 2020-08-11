@@ -10,7 +10,7 @@ As Professores poderão se cadastrar na plataforma web enviando:
 - Horários disponivéis na semana.
 
 Os Estudantes vão ter acesso a buscar por:
-- Matéria da aula do professor.
+- Matéria.
 - Dia da semana.
 - Horários disponivéis.
 
