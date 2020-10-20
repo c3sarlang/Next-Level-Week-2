@@ -3,6 +3,7 @@
 Proffy - aplicação para conectar Estudantes e Professores numa plataforma onde alunos buscam horários dísponibilizados pelos professores para marcar aulas durante a semana.
 
 Os Professores poderão se cadastrar na plataforma web enviando:
+
 - Nome
 - Avatar
 - Whatsapp.
@@ -12,12 +13,14 @@ Os Professores poderão se cadastrar na plataforma web enviando:
 - Horários disponivéis na semana.
 
 Os Estudantes vão poder fazer a busca por:
+
 - Matéria.
 - Dia da semana.
 - Horários disponivéis.
 
 
-Linguagens utilizadas:
+Linguagens e Framworks utilizados:
+
 - Expo
 - Typescrpit
 - Sqlite3
