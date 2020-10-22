@@ -26,7 +26,5 @@ Linguagens e Framworks utilizados:
 - Sqlite3
 - CSS
 
-Desenvolvedor: Júlio César de Oliveira Guimarães
-
 #rocketseat #Next-Level-Week-2
 #nodejs #typescript #expo #axios #react.js
