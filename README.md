@@ -1,6 +1,6 @@
 # Proffy 
 
-[![NPM](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/LICENSE) 
+[![NPM](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/LICENSE)
 
 # Sobre o projeto
 
