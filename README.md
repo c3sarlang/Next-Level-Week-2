@@ -1,30 +1,36 @@
-# Proffy
+# Proffy 
 
-Proffy - aplicação para conectar Estudantes e Professores numa plataforma onde alunos buscam horários dísponibilizados pelos professores para marcar aulas durante a semana.
+[![NPM](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/LICENSE) 
 
-Os Professores poderão se cadastrar na plataforma web enviando:
+# Sobre o projeto
 
-- Nome
-- Avatar
-- Whatsapp.
-- Biografia
-- Máteria da aula.
-- Custo da sua hora/aula.
-- Horários disponivéis na semana.
+O Projeto consiste em conectar Estudantes e Professores numa plataforma onde alunos buscam horários disponibilizados pelos professores para marcar aulas durante a semana.
 
-Os Estudantes vão poder fazer a busca por:
+## Layout web
+![Web 1](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/assets/tela-main.PNG)
 
-- Matéria.
-- Dia da semana.
-- Horários disponivéis.
+![Web 2](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/assets/tela-estudar.PNG)
 
+![Web 3](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/assets/tela-daraulas.PNG)
 
-Linguagens e Framworks utilizados:
+# Tecnologias utilizadas
+## Back end
+- Sqlite3
+- Node.js
 
+## Front end
+- React.js
 - Expo
 - Typescrpit
-- Sqlite3
 - CSS
 
-#rocketseat #Next-Level-Week-2
-#nodejs #typescript #expo #axios #react.js
+# Autor
+
+Júlio César de Oliveira Guimarães
+
+https://www.linkedin.com/in/j%C3%BAlio-c%C3%A9sar-de-oliveira-guimar%C3%A3es-183110162/
+
+
+
+
+
