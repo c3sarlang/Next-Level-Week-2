@@ -1,4 +1,4 @@
-# Proffy 
+# Proffy open_book:
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/c3saroliveira/Next-Level-Week-2/blob/master/LICENSE) 
 
